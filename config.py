@@ -1,0 +1,2 @@
+token = "ㅌㅋ"
+prefix = "!"
