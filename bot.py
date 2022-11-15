@@ -52,7 +52,7 @@ async def on_message(message):
                 user = await client.fetch_user(message.content[4:23])
                 msg = message.content[23:]
             except Exception as e:
-                await message.channel.send(f"명령어는 {prefix} [아이디] [답변] 형식으로 작성해주세요!.")
+                await message.channel.send(f"명령어는 {prefix}닫기 [아이디] [답변] 형식으로 작성해주세요!.")
             await message.delete()
             await DMChannel.send(user, f"관리자 {message.author.name} : {msg}")
             await DMChannel.send(user , "https://cdn.discordapp.com/attachments/1038741912577904733/1038776316616523877/hehe.png")
